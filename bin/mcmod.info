@@ -1,0 +1,16 @@
+[
+{
+  "modid": "t1dmod",
+  "name": "Type 1 Diabetes Mod",
+  "description": "A mod that gives everyone type 1 diabetes.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Codewolf"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

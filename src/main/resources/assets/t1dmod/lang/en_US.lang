@@ -1,0 +1,13 @@
+item.pancreas.name=Pancreas
+item.impureInsulinVial.name=Vial of Impure Insulin
+item.syringe.name=Syringe
+item.filledSyringe.name=Filled Syringe
+item.filledSyringe_0.name=Filled Syringe
+item.filledSyringe_1.name=Filled Syringe
+item.filledSyringe_2.name=Filled Syringe
+item.filledSyringe_3.name=Filled Syringe
+item.filledSyringe_4.name=Filled Syringe
+
+death.attack.syringe=%1$s was stabbed by a syringe
+death.attack.syringe.player=%1$s was stabbed by %2$s with a syringe
+death.attack.injecting=%1$s tried to take insulin at low health

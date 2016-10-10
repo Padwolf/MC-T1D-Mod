@@ -1,0 +1,42 @@
+[21:40:24] [main/INFO]: Setting user: Player914
+[21:40:26] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:40:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Type 1 Diabetes Mod
+[21:40:47] [Sound Library Loader/INFO]: Sound engine started
+[21:40:51] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[21:40:51] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[21:40:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Type 1 Diabetes Mod
+[21:40:52] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:40:52] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:40:53] [Sound Library Loader/INFO]: Sound engine started
+[21:41:00] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:41:00] [Server thread/INFO]: Generating keypair
+[21:41:01] [Server thread/INFO]: Preparing start region for level 0
+[21:41:02] [Server thread/INFO]: Preparing spawn area: 36%
+[21:41:03] [Server thread/INFO]: Changing view distance to 6, from 10
+[21:41:04] [Server thread/INFO]: Player914[local:E:9b98f3e1] logged in with entity id 317 at (168.40954122555263, 96.54539032434015, -72.75169754269842)
+[21:41:04] [Server thread/INFO]: Player914 joined the game
+[21:41:15] [Server thread/INFO]: [Player914: Set own game mode to Survival Mode]
+[21:41:15] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:41:42] [Server thread/INFO]: [Player914: Set own game mode to Creative Mode]
+[21:41:42] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:41:53] [Server thread/INFO]: Player914 has just earned the achievement [Taking Inventory]
+[21:41:53] [Client thread/INFO]: [CHAT] Player914 has just earned the achievement [Taking Inventory]
+[21:42:10] [Server thread/INFO]: Saving and pausing game...
+[21:42:10] [Server thread/INFO]: Saving chunks for level 'Modding Test'/Overworld
+[21:42:10] [Server thread/INFO]: Saving chunks for level 'Modding Test'/Nether
+[21:42:10] [Server thread/INFO]: Saving chunks for level 'Modding Test'/The End
+[21:42:13] [Server thread/INFO]: [Player914: Set own game mode to Survival Mode]
+[21:42:13] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:42:18] [Server thread/INFO]: [Player914: Set own game mode to Creative Mode]
+[21:42:18] [Client thread/INFO]: [CHAT] Your game mode has been updated
+[21:42:19] [Server thread/INFO]: Saving and pausing game...
+[21:42:19] [Server thread/INFO]: Saving chunks for level 'Modding Test'/Overworld
+[21:42:19] [Server thread/INFO]: Saving chunks for level 'Modding Test'/Nether
+[21:42:19] [Server thread/INFO]: Saving chunks for level 'Modding Test'/The End
+[21:42:20] [Server thread/INFO]: Stopping server
+[21:42:20] [Server thread/INFO]: Saving players
+[21:42:20] [Server thread/INFO]: Saving worlds
+[21:42:20] [Server thread/INFO]: Saving chunks for level 'Modding Test'/Overworld
+[21:42:20] [Server thread/INFO]: Saving chunks for level 'Modding Test'/Nether
+[21:42:20] [Server thread/INFO]: Saving chunks for level 'Modding Test'/The End
+[21:42:22] [Client thread/INFO]: Stopping!
