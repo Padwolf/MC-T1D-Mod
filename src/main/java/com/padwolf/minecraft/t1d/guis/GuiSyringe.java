@@ -1,13 +1,19 @@
 package com.padwolf.minecraft.t1d.guis;
 
+import java.util.Random;
+
 import com.padwolf.minecraft.t1d.T1D;
 import com.padwolf.minecraft.t1d.items.ItemImpureInsulin;
 import com.padwolf.minecraft.t1d.items.ItemSyringe;
+import com.padwolf.minecraft.t1d.packets.MessagePacket;
+import com.padwolf.minecraft.t1d.refs.Functions;
+
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
+import net.minecraft.world.World;
 
 public class GuiSyringe extends GuiScreen{
 	
@@ -15,12 +21,14 @@ public class GuiSyringe extends GuiScreen{
 	ItemStack stack;
 	ItemSyringe syringe;
 	EntityPlayer player;
+	World world;
 	int units;
 	
-	public GuiSyringe(ItemStack stack, ItemSyringe item, EntityPlayer player) {
+	public GuiSyringe(ItemStack stack, ItemSyringe item, EntityPlayer player, World world) {
 		this.stack = stack;
 		this.syringe = item;
 		this.player = player;
+		this.world = world;
 	}
 	
 	@Override
@@ -51,6 +59,8 @@ public class GuiSyringe extends GuiScreen{
 		if (button == ok){
 			if (units > 0){
 				boolean foundInsulin = false;
+				Functions.sendChatMessage(player, Boolean.toString(world.isRemote).toUpperCase());
+				if (world.isRemote) T1D.NET_CHANNEL.sendToServer(new MessagePacket(Integer.toString((new Random().nextInt() % 10)+1)));
 				for (ItemStack i : player.inventory.mainInventory){
 					if (i != null){
 						if (i.getItem() instanceof ItemImpureInsulin){
@@ -59,7 +69,7 @@ public class GuiSyringe extends GuiScreen{
 								foundInsulin = true;
 								i.setItemDamage(i.getItemDamage() + units);
 								stack.stackSize--;
-								player.inventory.addItemStackToInventory(new ItemStack(T1D.GLOBALS.items.filledSyringes[units-1], 1));
+								player.inventory.addItemStackToInventory(new ItemStack(T1D.GLOBALS.items.syringeFilled, 1, units));
 								break;
 							}
 						}

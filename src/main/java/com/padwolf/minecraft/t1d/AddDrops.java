@@ -30,5 +30,4 @@ public class AddDrops {
 	    	event.drops.add(new EntityItem(event.entityLiving.worldObj, event.entityLiving.posX, event.entityLiving.posY, event.entityLiving.posZ, new ItemStack(T1D.GLOBALS.items.pancreas)));
 	    }
 	}
-	
 }

@@ -30,8 +30,7 @@ public class ItemSyringe extends Item{
 	
 	@Override
 	public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
-		GuiSyringe gui = new GuiSyringe(itemStack, this, player);
-		if (world.isRemote) Minecraft.getMinecraft().displayGuiScreen(gui);
+		if (world.isRemote) Minecraft.getMinecraft().displayGuiScreen(new GuiSyringe(itemStack, this, player, world));
 		return super.onItemRightClick(itemStack, world, player);
 	}
 	
@@ -51,7 +50,7 @@ public class ItemSyringe extends Item{
 	@Override
 	public boolean onLeftClickEntity(ItemStack stack, EntityPlayer player, Entity entity) {
 		entity.attackEntityFrom(new DamageSource("syringe"), 0.5f);
-		stack.stackSize -= 1;
+		stack.stackSize--;
 		return super.onLeftClickEntity(stack, player, entity);
 	}
 }

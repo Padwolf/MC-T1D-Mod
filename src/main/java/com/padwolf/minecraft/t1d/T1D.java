@@ -8,6 +8,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
 @Mod(modid = T1D.MODID, version = T1D.VERSION)
 public class T1D
@@ -15,6 +17,7 @@ public class T1D
     public static final String MODID = "t1dmod";
     public static final String VERSION = "indev";
     public static final Globals GLOBALS = new Globals();
+    public static SimpleNetworkWrapper NET_CHANNEL;
     
     @Instance
     public static T1D instance = new T1D();
